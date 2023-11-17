@@ -6,8 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/js/bootstrap.min'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import NewCountries from './countryProject/NewCountries';
-import Country from './Country';
-import CountryDetails from './CountryDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -18,16 +16,7 @@ const router = createBrowserRouter([
             {
                 path:'/countries',
                 element:<NewCountries></NewCountries>
-            },
-            {
-                path:'/country',
-                element:<Country></Country>
-            },
-            {
-                path:'/countryDetails/:nam/:cap/:pop/:fla',
-                element:<CountryDetails></CountryDetails>
             }
-
         ]
     }
 ])
